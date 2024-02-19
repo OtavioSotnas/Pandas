@@ -39,11 +39,11 @@ DataFrame.mean()
 ```
 * Agrupar os dados de acordo com uma coluna específica utilizando o groupby;
 ```python
-DataFrame.groupby('Coluna').mean() # Essa função funciona em conjunto com sum() ou mean() para realizar o agrupamento.
+DataFrame.groupby('Coluna').mean() # Essa função funciona em conjunto com sum(), mean() e etc.
 ```
 * Fazer seleções utilizando o método query;
 ```python
-DataFrame.query("@variavel_exemplo in Coluna") # Para usarmos uma var na expressão necessário botar @ antes.
+DataFrame.query("@var in Coluna") # Para usarmos uma var na expressão necessário botar @ antes.
 ```
 * Transformar Series em DataFrames;
 ```python
@@ -67,5 +67,5 @@ DataFrame['Coluna'].value_counts() # Para transformar em % passamos o argumento 
 ```
 * Mudar nomes de colunas.
 ```python
-DataFrame.rename(columns={'nome_antigo': 'novo_nome'}) # Necessário pasar um dict como argumento para columns.
+DataFrame.rename(columns={'nome_antigo': 'novo_nome'})
 ```
