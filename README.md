@@ -6,6 +6,9 @@ Trello: https://trello.com/b/TUp6cdkC/pandas-conhecendo-a-biblioteca
 
 O que aprendemos : 
 * Importar a biblioteca Pandas;
+```python
+import pandas as pd
+```
 * Realizar a leitura de arquivos csv;
 * Identificar um DataFrame;
 * Visualizar linhas iniciais e finais de um DataFrame;
