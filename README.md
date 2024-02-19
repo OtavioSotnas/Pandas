@@ -69,3 +69,35 @@ DataFrame['Coluna'].value_counts() # Para transformar em % passamos o argumento 
 ```python
 DataFrame.rename(columns={'nome_antigo': 'novo_nome'})
 ```
+* Verificar se uma base de dados possui dados nulos;
+```python
+DataFrame.isnull() # Retorna um df com True e False.
+```
+* Tratar os dados nulos;
+```python
+DataFrame.fillna(value=0) # substitui todos os valores nulos com um método ou por algum valor.
+
+DataFrame.dropna()  # Remove todas as linhas ou colunas que possuem pelo menos um valor nulo.
+```
+* Remover linhas e colunas de um DataFrame;
+```python
+DataFrame.drop(columns=['nome_da_coluna']) # Remover uma coluna pelo nome
+
+DataFrame.drop([índice_da_linha]) # Remover uma linha pelo índice
+```
+* Realizar diferentes seleções em uma base de dados;
+```python
+selecao = (DataFrame['Coluna1'] >= 2) & (DataFrame['Coluna2'] < 3000) # Series de True e False
+
+DataFrame[selecao] # Filtra utilizando o uma Series Booleana
+
+DataFrame.query('Coluna1 >= 2 & Coluna2 < 3000') # O mesmo filtro utilizando query
+```
+* Salvar dados no formato csv;
+```python
+DataFrame.to_csv('nome_do_arquivo', index=False) # Salva um data frame na pasta local sem a coluna de index.
+```
+* Utilizar o método replace para substituir valores em uma base de dados.
+```python
+
+```
