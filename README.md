@@ -15,10 +15,10 @@ pd.read_csv(dados, sep=",")
 ```
 * Visualizar linhas iniciais e finais de um DataFrame;
 ```python
-DataFrame.head(5)
+DataFrame.head(5) # Retorna as 5 primeiras linhas.
 
-DataFrame.tail(5)
-```
+DataFrame.tail(5) # Retorna as 5 últimas linhas.
+``` 
 * Verificar a quantidade de linhas e colunas de um DataFrame;
 ```python
 DataFrame.shape()
@@ -31,7 +31,7 @@ DataFrame.info()
 ```python
 DataFrame['Coluna']
 
-DataFrame[['Coluna1'. 'Coluna2']]
+DataFrame[['Coluna1'. 'Coluna2']] # Passar uma lista com os nomes das colunas.
 ```
 * Calcular a média de valores de um DataFrame;
 ```python
@@ -39,7 +39,7 @@ DataFrame.mean()
 ```
 * Agrupar os dados de acordo com uma coluna específica utilizando o groupby;
 ```python
-DataFrame.groupby('Coluna').mean()
+DataFrame.groupby('Coluna').mean() # Essa função funciona em conjunto com sum() ou mean() para realizar o agrupamento.
 ```
 * Fazer seleções utilizando o método query;
 ```python
