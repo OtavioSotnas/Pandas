@@ -95,7 +95,7 @@ DataFrame.query('Coluna1 >= 2 & Coluna2 < 3000') # O mesmo filtro utilizando que
 ```
 * Salvar dados no formato csv;
 ```python
-DataFrame.to_csv('nome_do_arquivo', index=False) # Salva um data frame na pasta local sem a coluna de index.
+DataFrame.to_csv('nome_do_arquivo', index=False) # Salva um data frame na pasta local sem o index.
 ```
 * Utilizar o método replace para substituir valores em uma base de dados.
 ```python
